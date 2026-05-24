@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevCraft Pro | Senior Frontend Developer</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" src="js/tailwind.config.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="font-body-md text-on-surface">
+
+  <div class="mesh-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#">DevCraft Pro</a>
+
+      <button
+        type="button"
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Open menu"
+      >
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <nav aria-label="Main navigation">
+          <ul class="nav__links">
+            <li><a class="nav__link nav__link--active" href="#work">Work</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#experience">Experience</a></li>
+            <li><a class="nav__link" href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--primary btn--sm nav__hire" href="#contact">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="section hero" id="hero">
+      <div class="container grid-2 reveal">
+        <div class="hero__content">
+          <span class="hero__badge">7 Years of Excellence</span>
+          <h1 class="hero__title font-headline-xl">
+            Senior <span class="gradient-text">Frontend</span> Developer
+          </h1>
+          <p class="hero__desc font-body-lg">
+            Building high-performance, visually stunning digital experiences. Specializing in React, Next.js, and the future of web interfaces.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn--primary glow-hover" href="#contact">Hire Me</a>
+            <a class="btn btn--outline" href="#work">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__float-card hero__float-card--tl floating floating--delay-1">
+            <div class="glass-card p-md rounded-xl text-primary flex items-center gap-sm">
+              <span class="material-symbols-outlined">data_object</span>
+              <span class="font-bold">React</span>
+            </div>
+          </div>
+          <div class="hero__float-card hero__float-card--tr floating floating--delay-3">
+            <div class="glass-card p-md rounded-xl text-secondary flex items-center gap-sm">
+              <span class="material-symbols-outlined">javascript</span>
+              <span class="font-bold">JS</span>
+            </div>
+          </div>
+          <div class="hero__float-card hero__float-card--bl floating floating--delay-2">
+            <div class="glass-card p-md rounded-xl text-tertiary flex items-center gap-sm">
+              <span class="material-symbols-outlined">terminal</span>
+              <span class="font-bold">Node</span>
+            </div>
+          </div>
+
+          <div class="glass-card code-card rounded-xl">
+            <div class="code-card__dots">
+              <span class="code-card__dot bg-error"></span>
+              <span class="code-card__dot bg-secondary"></span>
+              <span class="code-card__dot bg-tertiary"></span>
+            </div>
+            <code class="code-card__code">
+              <span class="text-secondary">const</span> DevCraft = ({ skills }) =&gt; {<br />
+              &nbsp;&nbsp;<span class="text-tertiary">useEffect</span>(() =&gt; {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;console.<span class="text-secondary">log</span>(<span class="text-on-surface">"Optimizing Performance"</span>);<br />
+              &nbsp;&nbsp;}, []);<br /><br />
+              &nbsp;&nbsp;<span class="text-secondary">return</span> (<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="text-primary">HeroSection</span>&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{skills.map(s =&gt; &lt;<span class="text-primary">Skill</span> key={s} /&gt;)}<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="text-primary">HeroSection</span>&gt;<br />
+              &nbsp;&nbsp;);<br />
+              };
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container grid-2 reveal">
+        <div class="about__image-wrap">
+          <div class="about__image glass-card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMXkpPD1BCKSHhUAf863zN4y9T-t1qlgoOqSCmw47mvmHzvtu0fdHx1xUglKOLoUg_zBB04yHDjNZv8hu2t0s88Cu8vBK-HfjTUHa6cPDqtl0DnqziJWxYWET-0mPPlhaEkWPLnYqiLl9aOPmjK6f5eg1kCd8a1UlfHbWtp8KksUKLoYJJw3oVX7rfYQ955Jtczo1tkeiksPNGZTqcw31G6OWFHkX17GoJx2-6pSJb4tXRa9qxvnkY1r4sxOXWc6fQNu1nwExDmqk"
+              alt="Professional portrait of a senior frontend developer"
+            />
+          </div>
+        </div>
+
+        <div class="about__text">
+          <h2 class="font-headline-lg text-headline-lg mb-md">
+            Engineering <span class="gradient-text">Exceptional</span> Digital Solutions
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+            With over 7 years in the industry, I have navigated the evolution of the web from jQuery to the complex Next.js ecosystems of today. My passion lies in creating interfaces that are not only beautiful but architecturally sound and performance-optimized.
+          </p>
+          <div class="grid-stats">
+            <div class="glass-card stat-card rounded-xl">
+              <div class="stat-card__value text-primary">7+</div>
+              <div class="text-on-surface-variant text-label-md">Years Exp</div>
+            </div>
+            <div class="glass-card stat-card rounded-xl">
+              <div class="stat-card__value text-secondary">50+</div>
+              <div class="text-on-surface-variant text-label-md">Projects</div>
+            </div>
+            <div class="glass-card stat-card rounded-xl">
+              <div class="stat-card__value text-tertiary">Next.js</div>
+              <div class="text-on-surface-variant text-label-md">Specialist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container reveal">
+        <header class="section__header">
+          <h2 class="font-headline-lg text-headline-lg mb-sm">
+            Technical <span class="gradient-text">Arsenal</span>
+          </h2>
+          <p class="text-on-surface-variant">The modern tech stack powering high-performance applications.</p>
+        </header>
+
+        <div class="grid-skills">
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-error">html</span>
+            <span class="font-bold">HTML5</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-secondary">css</span>
+            <span class="font-bold">CSS3</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-tertiary-fixed">javascript</span>
+            <span class="font-bold">JavaScript</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group border-primary/30">
+            <span class="material-symbols-outlined skill-card__icon text-primary">deployed_code</span>
+            <span class="font-bold">React.js</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group border-secondary/30">
+            <span class="material-symbols-outlined skill-card__icon text-secondary-fixed">token</span>
+            <span class="font-bold">Next.js</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-tertiary">terminal</span>
+            <span class="font-bold">Node.js</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-on-surface-variant">api</span>
+            <span class="font-bold">Express.js</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-tertiary-container">database</span>
+            <span class="font-bold">MongoDB</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-error-container">source_notes</span>
+            <span class="font-bold">Git</span>
+          </div>
+          <div class="glass-card skill-card rounded-xl group">
+            <span class="material-symbols-outlined skill-card__icon text-primary-fixed-dim">cloud_sync</span>
+            <span class="font-bold">REST API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="work">
+      <div class="container reveal">
+        <header class="flex-between mb-xl">
+          <div>
+            <h2 class="font-headline-lg text-headline-lg mb-sm">
+              Featured <span class="gradient-text">Creations</span>
+            </h2>
+            <p class="text-on-surface-variant">A selection of premium digital products.</p>
+          </div>
+          <a class="text-primary hover:underline font-bold" href="#">View Archive</a>
+        </header>
+
+        <div class="grid-projects">
+          <article class="glass-card project-card rounded-xl group">
+            <div class="project-card__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIjNp_C-Acg5JQex618WdP9Nh4-leZNGBKPwPofoTYtXlgEoEFSnVkbZEoUS4ttyb-WiX9E0DtYMirv0uixVXTq7GVtkr4pyz7F_uWkzzLKeF_iwAxKnD7aD1VC9Wn7if8R1bAY9O2H6o2cCtRjeZFxa9mhwvWuDOIccMS0zB0Ft5IybnKn3dt_jlVnAihnwqxBwjOVPQZLulDUfLsQLgNlZcdQWJ87uMXd9O2-o6vxd7gMGMA3S5AjMLHDH3-JU9HJxkDunPQ2m8" alt="E-commerce application mockup" />
+              <div class="project-card__overlay">
+                <button class="btn btn--primary btn--sm rounded-full">Live Demo</button>
+                <button class="btn btn--sm rounded-full bg-surface text-on-surface border border-white/20">GitHub</button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag bg-primary/10 text-primary">Next.js</span>
+                <span class="tag bg-secondary/10 text-secondary">Stripe</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md mb-xs">E-commerce App</h3>
+              <p class="text-on-surface-variant">A high-performance marketplace with real-time inventory and global payments integration.</p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card rounded-xl group">
+            <div class="project-card__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFkNNJc2du_oDUQhNo8EzZUegQUf65jlmzoJihO0RkWq-lm7UPA7oZK9V1T8ZXqIcnUd0u4UjM3_nv7pRJZ256beJ7BVDHwTdgxrMAaJ9r4LSP5DpHP6OptU-nOROCAqh9ZlatRg46ceCu2rANwpuGA96Kupc6Xs2MOLOflXEVrp3cg3rmayfwlHBQFdJYm5bJcOOXIY4L7BBjXWW9zIqF4Q3Te6XRP7n5cPCJE2INvCe_yiiF_0FsCPO_hn246ZjGfztmv_IIMVE" alt="Admin dashboard mockup" />
+              <div class="project-card__overlay">
+                <button class="btn btn--primary btn--sm rounded-full">Live Demo</button>
+                <button class="btn btn--sm rounded-full bg-surface text-on-surface border border-white/20">GitHub</button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag bg-tertiary/10 text-tertiary">TypeScript</span>
+                <span class="tag bg-primary/10 text-primary">D3.js</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md mb-xs">Admin Dashboard</h3>
+              <p class="text-on-surface-variant">Real-time data visualization platform with complex role-based access control systems.</p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card rounded-xl group">
+            <div class="project-card__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAycoV4fiPwOcJqWJ-TCy_TOFIVWavzNc8DlQOOFBUUl-845s1aeVx1jypoDU-Pw9pjwbxIPCeNOVz7sW7FbSENpLIHKiZmGrvca5FlJOHBmgGE6ATRPFJTOAGJWfLTLtcOVC0Q7WyamCVyujJthtG7pYvQOm6HLYjGzsk77Mxb1l5DqpJlOvoTw4DTtVxkCoBPwsAwxjntvEW1XRzKQNUANH9P3O0S4GVro0MW8UGsf0RJUSuZs3F_cYikViiSDfqe6J5zLFHcUn8" alt="SaaS landing page mockup" />
+              <div class="project-card__overlay">
+                <button class="btn btn--primary btn--sm rounded-full">Live Demo</button>
+                <button class="btn btn--sm rounded-full bg-surface text-on-surface border border-white/20">GitHub</button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag bg-secondary/10 text-secondary">Framer Motion</span>
+                <span class="tag bg-primary/10 text-primary">Tailwind</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md mb-xs">SaaS Landing Page</h3>
+              <p class="text-on-surface-variant">High-converting landing page with 60fps animations and perfect SEO optimization.</p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card rounded-xl group">
+            <div class="project-card__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1FDrpjGGKyjIdvVG13KCpErxxoIERNpFfi58rXdy6xZEltb9dOBMxIZ9-P0xiRPU6IsFV7-XcSt14CWh9IiSliFnr3ExZ5o6ijOmyni3qDOyi-OfD8mcfDJONQLTXxytnbjz0XucIkrBaV0cVmbwcOmbmsQNuJde-vkQMUpEThML5MN_zuzdxpDjmX5rW9Q3xpydhGGepx18O0wY5UNhByvBGFgucg8ySJBt6Va2yMdmObGV1mysoqYD16R3NT_d2xW219gB3zgA" alt="AI web application mockup" />
+              <div class="project-card__overlay">
+                <button class="btn btn--primary btn--sm rounded-full">Live Demo</button>
+                <button class="btn btn--sm rounded-full bg-surface text-on-surface border border-white/20">GitHub</button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag bg-error/10 text-error">OpenAI API</span>
+                <span class="tag bg-tertiary/10 text-tertiary">Python</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md mb-xs">AI Web App</h3>
+              <p class="text-on-surface-variant">An AI-driven content generation tool with seamless API integration and cloud storage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--muted" id="experience">
+      <div class="container reveal">
+        <header class="section__header">
+          <h2 class="font-headline-lg text-headline-lg">
+            Career <span class="gradient-text">Journey</span>
+          </h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <article class="timeline__item">
+            <div class="timeline__dot timeline__dot--primary" aria-hidden="true"></div>
+            <div class="glass-card timeline__card rounded-xl">
+              <span class="text-primary font-bold text-sm block mb-xs">2021 — PRESENT</span>
+              <h3 class="font-headline-md text-headline-md mb-xs">Senior Frontend Lead</h3>
+              <p class="text-secondary mb-md">Innovate Solutions</p>
+              <p class="text-on-surface-variant text-body-md">Leading the frontend transition to Next.js 14, improving site performance by 40% and mentoring a team of 10 developers.</p>
+            </div>
+          </article>
+
+          <article class="timeline__item timeline__item--right">
+            <div class="timeline__dot timeline__dot--secondary" aria-hidden="true"></div>
+            <div class="glass-card timeline__card rounded-xl">
+              <span class="text-secondary font-bold text-sm block mb-xs">2018 — 2021</span>
+              <h3 class="font-headline-md text-headline-md mb-xs">Frontend Engineer</h3>
+              <p class="text-primary mb-md">TechNova Systems</p>
+              <p class="text-on-surface-variant text-body-md">Architected core React components for a flagship SaaS product serving over 1M active users monthly.</p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__dot timeline__dot--tertiary" aria-hidden="true"></div>
+            <div class="glass-card timeline__card rounded-xl">
+              <span class="text-tertiary font-bold text-sm block mb-xs">2016 — 2018</span>
+              <h3 class="font-headline-md text-headline-md mb-xs">Junior Web Developer</h3>
+              <p class="text-secondary mb-md">Creative Pixel Agency</p>
+              <p class="text-on-surface-variant text-body-md">Started the journey by building responsive landing pages and interactive UI elements for various client brands.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section overflow-hidden" id="testimonials">
+      <div class="container reveal">
+        <header class="section__header">
+          <h2 class="font-headline-lg text-headline-lg">
+            Client <span class="gradient-text">Voices</span>
+          </h2>
+        </header>
+
+        <div class="testimonial-grid">
+          <blockquote class="glass-card testimonial-card rounded-xl">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9JXKXkLy65U_s1l8wt4t6KL6E3gY8hIfli5TWhOm1CfxVNzhIMbCCXikBc_QQZVapLLu_HOUVQYZ1fZfHVdsEtdfSil-znipqBHU5oarOdsEGKWKY-nIn8sni7PwYlxAmLeK4W88KXaO18bTuaiDIYge_QI03HjqHskpAoA_6VErPosSf0XD6O317cv_xhMZan8D548Y2BQHNgA3wNkUTT3YM8BJ4Cl3RbtAGpaQKYcO4yHv3niupxMfk3R6uBzmUT7l9PUMgoY8" alt="Sarah Jenkins" />
+              </div>
+              <div>
+                <cite class="font-bold not-italic">Sarah Jenkins</cite>
+                <p class="text-xs text-on-surface-variant">CEO, Fintech Pro</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote">"DevCraft Pro delivered a world-class interface that exceeded our expectations. Their technical depth and design sense are unmatched."</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+            </div>
+          </blockquote>
+
+          <blockquote class="glass-card glass-card--highlight testimonial-card rounded-xl">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar" style="border-color: var(--color-secondary)">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYJ-MsznFd_JhThu2UNN1ddc1fQekPkdekwPtUmvPNdIX2dz3mXy186kCVZCs5Rxy7uzXa9WbqVAsN0eU2InqkEGYrepErmubw2_QYt-pT1G00krLTaIocX4L5ffUqxPs4YKvHM7ZdHM9igHfS3RZninEoNvFlWgUHi9gRAwPVXvIitz75TEPjBPpFjrPSTgz_P-ntpNnJgVCo3ifk15uxtaiukdNdSeiTePyPFPYXQvXt-lU89iTnAl3n50UL7IJMuGaYGtWFFuI" alt="Mark Redman" />
+              </div>
+              <div>
+                <cite class="font-bold not-italic">Mark Redman</cite>
+                <p class="text-xs text-on-surface-variant">CTO, CloudScale</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote">"The level of precision in their code and the fluidity of the animations transformed our user experience overnight. A true expert."</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+              <span class="material-symbols-outlined fill">star</span>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container reveal">
+        <div class="contact-form-card">
+          <header class="contact-form__header">
+            <h2 class="contact-form__title">
+              Let's <span class="contact-form__title-accent">Build</span> Something
+            </h2>
+            <p class="contact-form__subtitle">
+              Ready to elevate your digital presence? Send a message below.
+            </p>
+          </header>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="name">Full Name</label>
+                <input
+                  class="contact-form__input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="email">Email Address</label>
+                <input
+                  class="contact-form__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="message">Message</label>
+              <textarea
+                class="contact-form__textarea"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button class="contact-form__submit" type="submit">
+              Send Message
+              <span class="material-symbols-outlined contact-form__submit-icon" aria-hidden="true">send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="nav__logo block mb-xs">DevCraft Pro</span>
+        <p class="text-on-surface-variant text-body-md">© 2024 DevCraft Pro. Built with Precision.</p>
+      </div>
+      <nav class="footer__links" aria-label="Social links">
+        <a class="footer__link" href="#">
+          <span class="material-symbols-outlined">link</span> GitHub
+        </a>
+        <a class="footer__link" href="#">
+          <span class="material-symbols-outlined">link</span> LinkedIn
+        </a>
+        <a class="footer__link" href="#">
+          <span class="material-symbols-outlined">link</span> Twitter
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

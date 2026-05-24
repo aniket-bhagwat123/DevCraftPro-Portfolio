@@ -1,0 +1,30 @@
+/* Animations */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.floating--delay-1 {
+  animation-delay: 0.2s;
+}
+
+.floating--delay-2 {
+  animation-delay: 0.7s;
+}
+
+.floating--delay-3 {
+  animation-delay: 1.2s;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 40px rgba(124, 77, 255, 0.4);
+}

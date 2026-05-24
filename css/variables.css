@@ -1,0 +1,28 @@
+/* Design tokens */
+:root {
+  --color-surface: #0e1323;
+  --color-on-surface: #dee1f9;
+  --color-on-surface-variant: #cac3d8;
+  --color-primary: #cdbdff;
+  --color-primary-container: #7c4dff;
+  --color-on-primary-container: #fcf6ff;
+  --color-secondary: #8fd8ff;
+  --color-tertiary: #00e1a5;
+  --color-outline-variant: #494455;
+
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-display: "Geist", system-ui, sans-serif;
+
+  --container-max: 1200px;
+  --section-padding-y: 80px;
+  --section-padding-x: 24px;
+  --gutter: 24px;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-height: 72px;
+}
